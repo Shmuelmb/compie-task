@@ -2,3 +2,5 @@
 GET http://localhost:3000/healthcheck
 
 
+### Users
+GET http://localhost:3000/api/users
