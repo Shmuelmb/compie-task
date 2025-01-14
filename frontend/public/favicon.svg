@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-Favicon_32x32">
+      <rect width="32" height="32"/>
+    </clipPath>
+  </defs>
+  <g id="Favicon_32x32" data-name="Favicon 32x32" clip-path="url(#clip-Favicon_32x32)">
+    <g id="Group_33" data-name="Group 33" transform="translate(3 2)">
+      <path id="Path_27" data-name="Path 27" d="M19.486-1307.234l-6.5,6.518-6.5-6.518L0-1300.715l6.5,6.518,6.5,6.518,6.5-6.518,6.5-6.518Z" transform="translate(0 1315.679)" fill="#ceff00"/>
+      <rect id="Rectangle_15" data-name="Rectangle 15" width="5.943" height="5.943" transform="translate(15.29 4.202) rotate(-45)" fill="#ceff00"/>
+    </g>
+  </g>
+</svg>

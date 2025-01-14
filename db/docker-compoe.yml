@@ -1,0 +1,12 @@
+services:
+  postgres:
+    container_name: postgres-cluster
+    image: postgres
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: 1234
+      PGDATA: /data/postgres
+      POSTGRES_DB: postgres-cluster
+    ports:
+      - "5432:5432"
+    restart: unless-stopped

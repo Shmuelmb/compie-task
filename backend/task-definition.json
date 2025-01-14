@@ -1,0 +1,21 @@
+{
+  "containerDefinitions": [
+    {
+      "name": "boiler",
+      "memoryReservation": "256",
+      "cpu": "256",
+      "essential": true,
+      "portMappings": [
+        {
+          "hostPort": "0",
+          "containerPort": "3000",
+          "protocol": "tcp"
+        }
+      ]
+    }
+  ],
+  "volumes": [],
+  "networkMode": "bridge",
+  "placementConstraints": [],
+  "family": "[service-name]"
+}

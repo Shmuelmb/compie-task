@@ -1,0 +1,40 @@
+{
+  "name": "generic",
+  "version": "1.0.0",
+  "description": "generic boiler",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "precommit": "node lint",
+    "start": "node ./dist/server.js",
+    "bootstrap": "prisma generate && prisma db push --force-reset && npx ts-node ./src/prisma/seed.ts",
+    "dev": "nodemon --config nodemon.json src/server.ts",
+    "docker:start": "cross-env NODE_ENV=production pm2-docker start ./src/server.ts",
+    "docker:prod": "docker-compose -f docker-compose.yml -f docker-compose.prod.yml up",
+    "docker:dev": "docker-compose -f docker-compose.yml -f docker-compose.dev.yml up",
+    "docker:test": "docker-compose -f docker-compose.yml -f docker-compose.test.yml up --abort-on-container-exit"
+  },
+  "author": "app",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^6.2.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "helmet": "^7.1.0",
+    "module-alias": "^2.2.3",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/module-alias": "^2.0.4",
+    "@types/node": "^20.14.10",
+    "nodemon": "^3.1.4",
+    "prettier": "^3.3.2",
+    "prisma": "^6.2.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
