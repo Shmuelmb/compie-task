@@ -132,6 +132,7 @@ input {
 }
 :root {
   --border-radius: 8px;
+  --bg-color: rgb(37, 37, 37);
 }
 body {
   margin: 0;

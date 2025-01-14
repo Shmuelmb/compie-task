@@ -1,5 +1,3 @@
 export const onHealth = "/healthcheck"
-export const onUsers = "/users"
-export default {
-  onHealth,
-}
+export const onTrips = "/trips"
+export const onSearchTrips = "/trips/search"

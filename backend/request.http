@@ -2,5 +2,9 @@
 GET http://localhost:3000/healthcheck
 
 
-### Users
-GET http://localhost:3000/api/users
+### get trips
+GET http://localhost:3000/api/trips?skip=0&take=10
+
+
+### search trips
+GET http://localhost:3000/api/trips/search?query=Israel all together 

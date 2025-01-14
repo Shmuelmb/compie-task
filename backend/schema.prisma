@@ -6,13 +6,21 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
-model User {
-    id              String        @id @default(cuid())
-    username        String        @unique
-    email           String        @unique
-    password        String
+
+
+
+
+model Trip {
+    id                        String        @id @default(cuid())
+    trip_offering_description String
+    from_date                 String
+    to_date                   String
+    city_name       String
+    country_ISO_code String[]
+    trip_offering_name String
+    from_age        String
+    to_age          String
+    image            String
     createdAt       DateTime      @default(now())
     updatedAt       DateTime      @updatedAt
 }
-
-
